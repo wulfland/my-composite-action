@@ -23,5 +23,6 @@ runs:
       shell: bash
       
     - run: echo "Goodbuye $YOU"
+      shell: bash
       env:
         YOU: ${{ inputs.who-to-greet }}
