@@ -13,6 +13,7 @@ runs:
   using: "composite"
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}.
+      shell: bash
       
     - id: random-number-generator
       run: echo "::set-output name=random-id::$(echo $RANDOM)"
